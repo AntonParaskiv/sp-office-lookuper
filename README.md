@@ -3,7 +3,7 @@
 ### Run service
 
 ```shell
-$ go run ./cmd/httpserver
+$ go run ./cmd/api
 ```
 
 ### Environments
