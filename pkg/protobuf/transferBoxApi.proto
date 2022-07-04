@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "pkg/protobuf";
+
+service TransferBoxApi {
+    rpc GetSortpointId(GetSortpointIdRequest) returns (GetSortpointIdResponse) {}
+}
+
+message GetSortpointIdRequest {
+    int64 dstOfficeId = 1;
+}
+
+message GetSortpointIdResponse {
+    int64 sortpointId = 1;
+}
