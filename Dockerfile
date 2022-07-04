@@ -46,7 +46,7 @@ RUN --mount=type=cache,target=/go/pkg/mod \
     mkdir bin && \
     GOOS=linux CGO_ENABLED=${CGO} go build ${RACE} -v -installsuffix cgo -o ./bin \
     -ldflags "-linkmode external -extldflags -static -s -w" \
-    ./cmd/httpserver
+    ./cmd/api
 
 FROM alpine:3.15
 
